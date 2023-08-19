@@ -12,12 +12,17 @@ const TemplateDemo = () => {
                 <Home />
                 <h5>Navbar Normal</h5>
                 <NavbarComponent />
+
                 <h5>Navbar Navigation</h5>
                 <OffcanvasExample />
+
                 <h5>Carousel</h5>
                 <CarouseImage />
-                <h5>Cards</h5>
-                <Cards numberDisplayInOneLine={12} />
+
+                <h5>Cards Slide</h5>
+                <Cards numberDisplayInOneLine={12} isSlider={true} />
+                <h5>Cards Not Slide</h5>
+                <Cards numberDisplayInOneLine={6} isSlider={false} />
             </Container>
         </div>
     );
