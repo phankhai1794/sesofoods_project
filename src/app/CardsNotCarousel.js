@@ -8,7 +8,7 @@ const CardsNotCarousel = (props) => {
         <Row>
             {numberState && numberState.map(a => {
                 return (
-                    <Col lg={2} className={'element-card'}>
+                    <Col xl={2} lg={3} md={3} sm={4} className={'element-card'}>
                         <Card style={{width: '100%'}}>
                             <Card.Img variant="top" src="images/chiphilogistics.jpeg"/>
                             <Card.Body>
