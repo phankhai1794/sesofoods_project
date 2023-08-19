@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  margin: 0 30px;
 }
 
 .App-logo {
@@ -35,4 +36,28 @@
   to {
     transform: rotate(360deg);
   }
+}
+.style-carousel {
+  background: #61dafb;
+  height: 400px;
+}
+
+.template-demo h5 {
+  color: white;
+  border: 1px solid burlywood;
+  background: burlywood;
+  display: inline-block;
+}
+
+.template-demo {
+  margin-bottom: 100px;
+}
+
+.style-cards .row {
+  width: 100%;
+  margin: auto;
+}
+
+.style-cards .element-card {
+  padding: 0;
 }

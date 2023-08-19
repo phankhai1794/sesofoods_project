@@ -4,7 +4,7 @@ import {Container, Nav, Navbar, NavDropdown, Button, Form, Offcanvas} from "reac
 export const NavbarComponent = () => {
     return (
         <div>
-            <Navbar expand="lg" className="bg-body-tertiary">
+            <Navbar expand="sm" className="bg-body-tertiary">
                 <Container>
                     <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />

@@ -1,13 +1,10 @@
 import './App.css';
-import Home from "./app/Home";
-import {NavbarComponent, OffcanvasExample} from "./app/NavbarComponent";
+import TemplateDemo from "./TemplateDemo";
 
 function App() {
   return (
     <div className="App">
-        <Home />
-        <NavbarComponent />
-        <OffcanvasExample />
+        <TemplateDemo />
     </div>
   );
 }
