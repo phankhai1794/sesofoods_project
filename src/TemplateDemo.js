@@ -17,7 +17,7 @@ const TemplateDemo = () => {
                 <h5>Carousel</h5>
                 <CarouseImage />
                 <h5>Cards</h5>
-                <Cards numberDisplayInOneLine={6} />
+                <Cards numberDisplayInOneLine={12} />
             </Container>
         </div>
     );
