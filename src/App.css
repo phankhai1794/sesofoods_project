@@ -65,6 +65,20 @@
   margin-bottom: 30px;
 }
 
+.bg-body-tertiary {
+  background: #f5f3eab3;
+}
+
 .bg-body-tertiary .nav-item a {
   padding-left: 17.5px;
+}
+
+.offcanvas-body .input-search {
+  position: relative;
+}
+
+.offcanvas-body .icon-search {
+  position: absolute;
+  right: 0;
+  top: 1px;
 }

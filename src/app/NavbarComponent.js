@@ -1,5 +1,7 @@
 import React from 'react';
-import {Container, Nav, Navbar, NavDropdown, Button, Form, Offcanvas} from "react-bootstrap";
+import {Container, Nav, Navbar, NavDropdown, Form, Offcanvas} from "react-bootstrap";
+import {BiUser} from "react-icons/bi";
+import {AiOutlineHeart, AiOutlineSearch, AiOutlineShoppingCart} from "react-icons/ai";
 
 export const NavbarComponent = () => {
     return (
@@ -109,13 +111,20 @@ export const OffcanvasExample = () => {
                                     {/*</NavDropdown>*/}
                                 </Nav>
                                 <Form className="d-flex">
-                                    <Form.Control
-                                        type="search"
-                                        placeholder="Search"
-                                        className="me-2"
-                                        aria-label="Search"
-                                    />
-                                    <Button variant="outline-success">Search</Button>
+                                    <div className='input-search'>
+                                        <Form.Control
+                                            type="search"
+                                            placeholder="Search"
+                                            className="me-2"
+                                            aria-label="Search"
+                                        />
+                                        <div className='icon-search'>
+                                            <h4><AiOutlineSearch /></h4>
+                                        </div>
+                                    </div>
+                                    <h3><BiUser /></h3>
+                                    <h3><AiOutlineHeart /></h3>
+                                    <h3><AiOutlineShoppingCart /></h3>
                                 </Form>
                             </Offcanvas.Body>
 
