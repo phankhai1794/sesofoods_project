@@ -4,6 +4,7 @@ import {NavbarComponent, OffcanvasExample} from "./app/NavbarComponent";
 import CarouseImage from "./app/CarouseImage";
 import Cards from "./app/Cards";
 import {Container} from "react-bootstrap";
+import CarouselSlick from "./app/CarouselSlick";
 
 const TemplateDemo = () => {
     return (
@@ -18,6 +19,9 @@ const TemplateDemo = () => {
 
             <h5>Carousel</h5>
             <CarouseImage />
+
+            <h5>Card Carousel Slick</h5>
+            <CarouselSlick />
 
             <Container>
                 <h5>Cards Slide</h5>

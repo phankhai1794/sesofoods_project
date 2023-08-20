@@ -37,7 +37,7 @@ export const OffcanvasExample = () => {
     return (
         <>
             {['xl'].map((expand) => (
-                <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-3">
+                <Navbar key={expand} expand={expand} className="bg-body-tertiary">
                     <Container fluid>
                         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
 
