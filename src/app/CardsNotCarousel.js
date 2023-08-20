@@ -3,7 +3,7 @@ import { Card, Col, Row } from "react-bootstrap";
 
 const CardsNotCarousel = (props) => {
   const { cardInfo } = props;
-  console.log("cardInfo", cardInfo);
+
   return (
     <Row>
       {cardInfo &&
