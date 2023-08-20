@@ -99,3 +99,16 @@
 #sanpham-hot {
   background: #e4efe9 !important
 }
+
+#banh-keo-ngon {
+  margin-top: 1rem;
+}
+
+#combo-tiet-kiem {
+  margin-top: 1rem;
+}
+
+.card-list-title {
+  text-align: left;
+  color: #228b22
+}

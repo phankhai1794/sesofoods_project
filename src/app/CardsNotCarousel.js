@@ -1,30 +1,35 @@
-import React from 'react';
-import {Button, Card, Col, Row} from "react-bootstrap";
+import React from "react";
+import { Card, Col, Row } from "react-bootstrap";
 
 const CardsNotCarousel = (props) => {
-    const {numberState} = props;
-
-    return (
-        <Row>
-            {numberState && numberState.map(a => {
-                return (
-                    <Col xl={2} lg={3} md={3} sm={4} className={'element-card'}>
-                        <Card style={{width: '100%'}}>
-                            <Card.Img variant="top" src="images/chiphilogistics.jpeg"/>
-                            <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
-                                <Card.Text>
-                                    Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.
-                                </Card.Text>
-                                <Button variant="primary">Go somewhere</Button>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                )
-            })}
-        </Row>
-    );
+  const { cardInfo } = props;
+  console.log("cardInfo", cardInfo);
+  return (
+    <Row>
+      {cardInfo &&
+        cardInfo.map((item, index) => {
+          return (
+            <Col
+              key={index}
+              xl={2}
+              lg={3}
+              md={3}
+              sm={4}
+              className={"element-card p"}
+            >
+              <Card style={{ width: "100%", height: "100%", borderRadius: '0px'}}>
+                <Card.Img variant="top" src={`${item.img}`} />
+                <Card.Body>
+                  <Card.Title>{`${item.cardTitle}`}</Card.Title>
+                  <Card.Text></Card.Text>
+                  <p>{item.price}</p>
+                </Card.Body>
+              </Card>
+            </Col>
+          );
+        })}
+    </Row>
+  );
 };
 
 export default CardsNotCarousel;
