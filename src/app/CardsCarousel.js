@@ -1,6 +1,7 @@
-import React from "react";
+import React, {useState} from "react";
 import { Button, Card } from "react-bootstrap";
 import Slider from "react-slick";
+import {AiOutlineShoppingCart} from "react-icons/ai";
 
 const CardsCarousel = (props) => {
   const { numberState, cardInfo } = props;
@@ -49,6 +50,14 @@ const CardsCarousel = (props) => {
     ],
   };
 
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+  const handleHover = (index) => {
+    setHoveredIndex(index)
+  }
+  const handleLeave = () => {
+    setHoveredIndex(null)
+  }
+
   return (
     <div className="notCarousel">
       <Slider {...settings}>
@@ -56,11 +65,16 @@ const CardsCarousel = (props) => {
           ? cardInfo.map((item, index) => {
               return (
                 <Card key={index} style={{ width: "100%", height: "100%", borderRadius: '0px' }}>
-                  <Card.Img variant="top" src={`${item.img}`} />
+                  <div className={`card-image`} onMouseEnter={() => handleHover(index)}
+                       onMouseLeave={() => handleLeave()}>
+                    <Card.Img variant="top" src={`${item.img}`}
+                    />
+                    <div className={`icon-cart ${hoveredIndex === index ? 'isHover' : ''}`}><AiOutlineShoppingCart /></div>
+                  </div>
                   <Card.Body>
                     <Card.Title>{`${item.cardTitle}`}</Card.Title>
-                    <Card.Text></Card.Text>
-                    <p>{item.price}</p>
+                    <Card.Text>{''}</Card.Text>
+                    <p style={{ color: 'red', fontWeight: 500 }}>{item.price}</p>
                   </Card.Body>
                 </Card>
               );

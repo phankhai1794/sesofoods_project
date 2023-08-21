@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  overflow-x: hidden;
 }
 
 .App-logo {
@@ -89,12 +90,75 @@
   height: 333px;
 }
 
-.slick-slider .slick-list {
+@media only screen and (min-width: 1400px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1200px !important;
+  }
+}
+
+.slick-slider .slick-list, .element-card .card {
   height: 100%;
+  font-size: 18px;
+  font-family: 'ui-sans-serif';
+}
+
+.slick-list .slick-slide {
+  cursor: grab;
+}
+
+.slick-list .slick-slide .card-image, .element-card .card-image {
+  padding: 20px;
+}
+
+.card-image .card-img-top {
+  cursor: pointer;
+}
+
+.slick-list .slick-slide .card, .element-card .card {
+  border-radius: inherit;
+  border-color: #cebfaa47;
+}
+
+.card .card-body {
+  padding-top: 0;
+}
+
+.slick-list .slick-slide .card-image img {
+  box-shadow: 0 0 12px rgba(0,0,0,.12);
 }
 
 .single-slick .slick-dots {
   bottom: 0;
+}
+
+.icon-cart {
+  opacity: 0;
+  position: absolute;
+  top: 144px;
+  left: 89px;
+  border: 1px solid green;
+  background-color: forestgreen;
+  border-radius: 55%;
+  transition: transform 1s ease;
+  width: 15%;
+  padding-right: 2px;
+  cursor: pointer;
+}
+.icon-cart svg {
+  color: white;
+  font-size: 15px;
+}
+.icon-cart:hover {
+  background-color: orange;
+  border-color: orange;
+}
+.icon-cart:hover svg {
+  color: black
+}
+.isHover {
+  transform: scale(1.5);
+  transition: transform 1s ease;
+  opacity: 1;
 }
 
 #danhmuc-sanpham, #sanpham-hot, #banh-keo-ngon, #combo-tiet-kiem {
@@ -103,16 +167,22 @@
 }
 
 #sanpham-hot {
-  background: #e4efe9 !important
+  background: #e4efe9 !important;
+  padding: 10px 0 30px 0;
 }
 
 .style-cards {
-  margin-top: 30px;
+  margin-top: 5px;
+  margin-bottom: 40px;
 }
 
 .card-list-title {
   text-align: left;
   color: #228b22
+}
+
+.menu {
+  margin-top: 40px;
 }
 
 .logo-header {

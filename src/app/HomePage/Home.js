@@ -12,20 +12,20 @@ const Home = () => {
       <CarouselSlick />
 
       <Container>
-        <div id="danhmuc-sanpham">
+        <div id="danhmuc-sanpham" className='menu'>
           <h2 style={{ color: "#228b22" }}>{"Danh Mục Sản Phẩm"}</h2>
           <Cards numberDisplayInOneLine={12} isSlider={true} />
         </div>
 
-        <div id="uudai-tuannay">
-          <h2 style={{ color: "#228b22" }}>{"Ưu Đãi Tuần Này"}</h2>
+        <div id="uudai-tuannay" className='menu'>
+          <h2 style={{ color: "#228b22", textAlign: 'left', paddingTop: '10px', marginBottom: 0 }}>{"Ưu Đãi Tuần Này"}</h2>
           <Cards numberDisplayInOneLine={12} isSlider={true} />
         </div>
       </Container>
 
-      <div id="sanpham-hot">
+      <div id="sanpham-hot" className='menu'>
         <Container>
-          <h2 style={{ color: "#228b22" }}>{"Sản Phẩm Hot"}</h2>
+          <h2 style={{ color: "#228b22", textAlign: 'left', paddingTop: '10px' }}>{"Sản Phẩm Hot"}</h2>
           <Cards numberDisplayInOneLine={6} isSlider={false} />
           <Button as="a" variant="success">
             {"Xem Thêm ->"}
@@ -33,13 +33,13 @@ const Home = () => {
         </Container>
       </div>
 
-      <div id="banh-keo-ngon">
+      <div id="banh-keo-ngon" className='menu'>
         <Container>
           <CardList title={"BÁNH KẸO NGON"} />
         </Container>
       </div>
 
-      <div id="combo-tiet-kiem">
+      <div id="combo-tiet-kiem" className='menu'>
         <Container>
           <CardList title={"COMBO TIẾT KIỆM"} isSlider={true} />
         </Container>

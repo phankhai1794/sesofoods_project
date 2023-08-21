@@ -18,11 +18,13 @@ const CardsNotCarousel = (props) => {
               className={"element-card p"}
             >
               <Card style={{ width: "100%", height: "100%", borderRadius: '0px'}}>
-                <Card.Img variant="top" src={`${item.img}`} />
+                <div className='card-image'>
+                  <Card.Img variant="top" src={`${item.img}`} />
+                </div>
                 <Card.Body>
                   <Card.Title>{`${item.cardTitle}`}</Card.Title>
-                  <Card.Text></Card.Text>
-                  <p>{item.price}</p>
+                  <Card.Text>{''}</Card.Text>
+                  <p style={{ color: 'red', fontWeight: 500 }}>{item.price}</p>
                 </Card.Body>
               </Card>
             </Col>
