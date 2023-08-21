@@ -193,3 +193,12 @@
   height: 1.5em !important;
   margin: 0.3em;
 }
+
+.small-text {
+  display: flex;
+  align-items: center;
+  margin-left: 4px;
+  color: gray;
+  font-size: 12px;
+  font-style: italic;
+}
