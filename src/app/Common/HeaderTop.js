@@ -4,6 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { BiPhone, BiMailSend } from "react-icons/bi";
 import { CiFacebook, CiYoutube } from "react-icons/ci";
+import { LiaGiftSolid } from "react-icons/lia";
 import { Button } from "react-bootstrap";
 
 const Home = () => {
@@ -42,6 +43,12 @@ const Home = () => {
           <Button variant="outline-success" size="sm">
             {"ĐĂNG KÍ TÀI KHOẢN"}
           </Button>
+          
+          <small className="small-text">
+            {"ngay để nhận khuyến mãi "}
+            <LiaGiftSolid className="icon-header" />
+          </small>
+
         </Col>
         <Col className="text-end">
           <a href="#" alt="" style={{ color: "black"}}>
