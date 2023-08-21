@@ -79,8 +79,9 @@
 
 .offcanvas-body .icon-search {
   position: absolute;
-  right: 0;
-  top: 1px;
+  right: 4px;
+  top: 4px;
+  color: black;
 }
 
 .single-slick .slick-slider {
@@ -112,4 +113,13 @@
 .card-list-title {
   text-align: left;
   color: #228b22
+}
+
+.logo-header {
+  width: 150px;
+}
+.icon-header {
+  width: 1.5em !important;
+  height: 1.5em !important;
+  margin: 0.3em;
 }

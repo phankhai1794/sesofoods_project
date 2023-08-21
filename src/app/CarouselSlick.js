@@ -2,30 +2,27 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 
 const CarouselSlick = () => {
+  const sliderArrImg = [
+    "https://bizweb.dktcdn.net/100/427/943/themes/821832/assets/slider_3.jpg?1632270376172",
+  ];
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    slickPlay: true
+  };
 
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1
-    };
-
-    return (
-        <div className='single-slick'>
-            <Slider {...settings}>
-                <div>
-                    <h3>1</h3>
-                </div>
-                <div>
-                    <h3>2</h3>
-                </div>
-                <div>
-                    <h3>3</h3>
-                </div>
-            </Slider>
-        </div>
-    );
-}
+  return (
+    <div className="single-slick">
+      <Slider {...settings}>
+        <img src={`${sliderArrImg[0]}`} />
+        <img src={`${sliderArrImg[0]}`} />
+        <img src={`${sliderArrImg[0]}`} />
+      </Slider>
+    </div>
+  );
+};
 
 export default CarouselSlick;

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container, Nav, Navbar, NavDropdown, Form, Offcanvas} from "react-bootstrap";
+import {Container, Nav, Navbar, NavDropdown, Form, Offcanvas, Button} from "react-bootstrap";
 import {BiUser} from "react-icons/bi";
 import {AiOutlineHeart, AiOutlineSearch, AiOutlineShoppingCart} from "react-icons/ai";
 
@@ -38,12 +38,14 @@ export const OffcanvasExample = () => {
         <>
             {['xl'].map((expand) => (
                 <Navbar key={expand} expand={expand} className="bg-body-tertiary">
-                    <Container fluid>
+                    <Container>
                         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
 
                         {/*Logo*/}
                         <div>
-                            <Navbar.Brand href="#">Logo</Navbar.Brand>
+                            <Navbar.Brand href="#">
+                            <img className='logo-header' src="https://sesofoods.com/cdn/shop/files/Logo_In_MenuTab_1_1_761x.png?v=1647610647" alt=""/>
+                            </Navbar.Brand>
                         </div>
 
                         {/*Danh Mục, Hỗ trợ, Tin tức*/}
@@ -110,21 +112,21 @@ export const OffcanvasExample = () => {
                                     {/*>*/}
                                     {/*</NavDropdown>*/}
                                 </Nav>
-                                <Form className="d-flex">
-                                    <div className='input-search'>
+                                <Form className="d-flex justify-content-evenly align-items-center">
+                                    <div className='input-search p-2'>
                                         <Form.Control
                                             type="search"
                                             placeholder="Search"
-                                            className="me-2"
+                                            className="me-2 rounded-pill"
                                             aria-label="Search"
                                         />
-                                        <div className='icon-search'>
+                                        <div className='icon-search btn btn-link'>
                                             <h4><AiOutlineSearch /></h4>
                                         </div>
                                     </div>
-                                    <h3><BiUser /></h3>
-                                    <h3><AiOutlineHeart /></h3>
-                                    <h3><AiOutlineShoppingCart /></h3>
+                                    <h3 className="p-2"><BiUser /></h3>
+                                    <h3 className="p-2"><AiOutlineHeart /></h3>
+                                    <h3 className="p-2"><AiOutlineShoppingCart /></h3>
                                 </Form>
                             </Offcanvas.Body>
 
