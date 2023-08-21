@@ -12,7 +12,7 @@ const Home = () => {
       <CarouselSlick />
 
       <Container>
-        <div id="product-menu">
+        <div id="danhmuc-sanpham">
           <h2 style={{ color: "#228b22" }}>{"Danh Mục Sản Phẩm"}</h2>
           <Cards numberDisplayInOneLine={12} isSlider={true} />
         </div>
@@ -32,11 +32,13 @@ const Home = () => {
           </Button>
         </Container>
       </div>
+
       <div id="banh-keo-ngon">
         <Container>
           <CardList title={"BÁNH KẸO NGON"} />
         </Container>
       </div>
+
       <div id="combo-tiet-kiem">
         <Container>
           <CardList title={"COMBO TIẾT KIỆM"} isSlider={true} />
