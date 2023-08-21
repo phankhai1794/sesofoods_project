@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import { Button, Card } from "react-bootstrap";
 import Slider from "react-slick";
-import {AiOutlineShoppingCart} from "react-icons/ai";
+import {AiFillHeart, AiOutlineHeart, AiOutlineShoppingCart} from "react-icons/ai";
 
 const CardsCarousel = (props) => {
   const { numberState, cardInfo } = props;
@@ -67,8 +67,11 @@ const CardsCarousel = (props) => {
                 <Card key={index} style={{ width: "100%", height: "100%", borderRadius: '0px' }}>
                   <div className={`card-image`} onMouseEnter={() => handleHover(index)}
                        onMouseLeave={() => handleLeave()}>
-                    <Card.Img variant="top" src={`${item.img}`}
+                    <div className={`icon-heart ${hoveredIndex === index ? 'isHoverHeart' : ''}`}><AiOutlineHeart /></div>
+                    <div className='imag-hover'>
+                      <Card.Img variant="top" src={`${item.img}`}
                     />
+                    </div>
                     <div className={`icon-cart ${hoveredIndex === index ? 'isHover' : ''}`}><AiOutlineShoppingCart /></div>
                   </div>
                   <Card.Body>
