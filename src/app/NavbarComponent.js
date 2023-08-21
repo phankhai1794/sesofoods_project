@@ -52,6 +52,7 @@ export const OffcanvasExample = () => {
                         <NavDropdown
                             title="Danh Mục"
                             id={`offcanvasNavbarDropdown-expand-${expand}`}
+                            className='nav-header-title'
                         >
                             <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
                             <NavDropdown.Item href="#action4">
