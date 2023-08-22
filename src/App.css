@@ -107,7 +107,7 @@
 }
 
 .slick-list .slick-slide .card-image, .element-card .card-image {
-  padding: 20px;
+  padding: 15px;
 }
 
 .card-image img:hover {
@@ -116,6 +116,7 @@
 }
 .imag-hover {
   overflow: hidden;
+  box-shadow: 0 0 12px rgba(0,0,0,.12);
 }
 .card-body:hover {
   color: green;
@@ -144,8 +145,8 @@
 .icon-heart {
   opacity: 0;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 5%;
+  left: 11%;
   font-size: 20px;
   border-radius: 55%;
   z-index: 1000;
